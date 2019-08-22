@@ -1,0 +1,55 @@
+.header{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 20px 2px rgb(212, 212, 212);
+    display: flex;
+    justify-content: space-around;
+}
+.header__menu{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.3s;
+}
+.perfil__text{
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto 0;
+    background: -webkit-linear-gradient(30deg,#e102bf,#0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header__menu:hover ul{
+    display: block;
+}
+.header__menu ul{
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+.header__menu li{
+    margin: 10px 0;
+}
+.header__menu a{
+    text-decoration: none;
+    color: rgb(173, 173, 173);
+    transition-duration: 0.3s;
+}
+.header__menu a:hover{
+    background: -webkit-linear-gradient(30deg,#e102bf,#0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header__menu--profile{
+    display: flex;
+    margin-top: 1em;
+}
+.header__menu--profile img{
+    width: 55px;
+    height: 55px;
+}
+.jotta__icon{
+    width: 180px;
+    height: 80px;
+}

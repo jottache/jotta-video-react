@@ -1,0 +1,54 @@
+.carousel-item{
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: #e102bf;
+    overflow: hidden;
+    margin-right: 10px;
+    /* cursor: pointer; */
+    transition: 450ms;
+    transform-origin: center left;
+    position: relative;
+}
+.carousel-item:hover ~ .carousel-item { /* la virguliña ~ sirve para que aplique a los elementos a quienes mencionamos luego del simbolito*/
+    transform: translate3d(100px, 0, 0); /*para que se desplacen a la derecha los elementos*/
+  }
+  .carousel__container:hover .carousel-item {
+    opacity: 0.3;
+  }
+  .carousel__container:hover .carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  .carousel-item__img{
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+  }
+  .carousel-item__details {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 0%, rgba(167, 167, 167, 0) 100%);
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: rgb(82, 82, 82);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+  }
+  .carousel-item__icon{
+    width: 30px;
+  }
+  .descripcion{
+      margin: 0;
+  }
+  .carousel-item:hover .carousel-item__details{
+      opacity: 1;
+  }

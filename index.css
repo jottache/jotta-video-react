@@ -1,0 +1,184 @@
+/* #e102bf */
+/* #0ff */
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    margin: 0;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 0 20px 2px rgb(212, 212, 212);
+    display: flex;
+    justify-content: space-around;
+}
+.header__menu{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    transition-duration: 0.3s;
+}
+.perfil__text{
+    font-size: 18px;
+    font-weight: bold;
+    margin: auto 0;
+    background: -webkit-linear-gradient(30deg,#e102bf,#0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header__menu:hover ul{
+    display: block;
+}
+.header__menu ul{
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+.header__menu li{
+    margin: 10px 0;
+}
+.header__menu a{
+    text-decoration: none;
+    color: rgb(173, 173, 173);
+    transition-duration: 0.3s;
+}
+.header__menu a:hover{
+    background: -webkit-linear-gradient(30deg,#e102bf,#0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header__menu--profile{
+    display: flex;
+    margin-top: 1em;
+}
+.header__menu--profile img{
+    width: 55px;
+    height: 55px;
+}
+.jotta__icon{
+    width: 180px;
+    height: 80px;
+}
+.search{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search__title{
+    font-size: 25px;
+    background: -webkit-linear-gradient(30deg,#e102bf,#0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.search__input{
+    width: 30%;
+    height: 1.5em;
+    border-radius: 20px;
+    border: 2px solid rgb(173, 173, 173);
+    padding: 1em;
+    box-shadow: 0 0 15px 2px rgba(212, 212, 212, 0.534);
+    outline: none;
+    transition: .3s;
+}
+.search__input:focus{
+    transform: scale(1.03)
+}
+.carousel{
+    width: 100%;
+    /* height: 500px; */
+    padding: 30px;
+    position: relative;
+}
+.carousel-title{
+    font-size: 25px;
+    background: -webkit-linear-gradient(30deg,#e102bf,#0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.carousel__container{
+    white-space: nowrap; /* para que los elementos no salten y se mantenga el scroll*/
+    display: flex;
+    margin: 70px 0;
+    padding-bottom: 10px;
+}
+.carousel-item{
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: #e102bf;
+    overflow: hidden;
+    margin-right: 10px;
+    /* cursor: pointer; */
+    transition: 450ms;
+    transform-origin: center left;
+    position: relative;
+}
+.carousel-item:hover ~ .carousel-item { /* la virguliña ~ sirve para que aplique a los elementos a quienes mencionamos luego del simbolito*/
+    transform: translate3d(100px, 0, 0); /*para que se desplacen a la derecha los elementos*/
+  }
+  .carousel__container:hover .carousel-item {
+    opacity: 0.3;
+  }
+  .carousel__container:hover .carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  .carousel-item__img{
+      width: 200px;
+      height: 250px;
+      object-fit: cover;
+  }
+  .carousel-item__details {
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.9) 0%, rgba(167, 167, 167, 0) 100%);
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: rgb(82, 82, 82);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+  }
+  .carousel-item__icon{
+    width: 30px;
+  }
+  .descripcion{
+      margin: 0;
+  }
+  .carousel-item:hover .carousel-item__details{
+      opacity: 1;
+  }
+  .footer{
+    padding: 1em;
+    margin-top: 3em;
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 0 20px 2px rgb(212, 212, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer a{
+    text-decoration: none;
+    margin-top: 1em;
+    color: rgb(97, 97, 97);
+}
+.footer a:hover{
+    text-decoration: underline;
+}
