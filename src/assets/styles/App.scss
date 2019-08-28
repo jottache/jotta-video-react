@@ -1,6 +1,8 @@
+@import './Var.scss';
+
 *{
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    font-family: $theme-font;
 }
 body{
     margin: 0;
